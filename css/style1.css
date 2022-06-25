@@ -1,0 +1,395 @@
+:root {
+    --main-color: #E5E5E5;
+    --additional-color: #2196F3;
+    --type-color: #212121;
+    --mini-calor: #757575;
+    --phone-color: #2F303A;
+    --card-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px (0, 0, 0, 0.14),
+        3px 0px 1px rgba(0, 0, 0, 0.12);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--type-color);
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+/*List*/
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Container*/
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Header*/
+.logo1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.17;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+    color: var(--additional-color);
+}
+
+.logo-accent {
+    color: var(--type-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/*Main-nav*/
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item {
+    margin-right: 50px;
+
+}
+
+.site-nav .item:last-child {
+    margin-right: 0px;
+}
+
+.site-nav .link-info {
+    color: var(--type-color);
+}
+
+.link-studio {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--additional-color);
+    display: block;
+}
+
+/*Logo-links*/
+.logo-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.site-nav .link-info:hover {
+    color: var(--additional-color);
+    background-color: transparent;
+}
+
+.link1 {
+    font-size: 14px;
+    line-height: 1.14;
+    line-height: 100%;
+    text-align: left;
+    letter-spacing: 0.02em;
+    color: var(--mini-calor);
+    text-decoration: none;
+    display: block;
+}
+
+/*Contacts*/
+.contacts {
+    display: flex;
+}
+
+.contacts .points {
+    margin-right: 50px;
+}
+
+.contacts .points:last-child {
+    margin-right: 0px;
+}
+
+.contacts a:hover {
+    color: var(--additional-color);
+}
+
+/*Герой*/
+.hero {
+    height: 600px;
+    padding: 200px 0;
+    text-align: center;
+    background-color: var(--phone-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-title {
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+.btn {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    background-color: var(--additional-color);
+    cursor: pointer;
+    outline: none;
+    border: 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: white;
+    font-weight: 700;
+    height: 48px;
+    width: 200px;
+}
+
+.btn:hover {
+    background-color: #188CE8;
+}
+
+.topic {
+    width: 100%;
+    background-color: var(--phone-color);
+}
+
+/*Feature-list*/
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+
+}
+
+.feature-list .marks {
+    margin-right: 30px;
+    padding-left: 26px;
+}
+
+.feature-list .marks:last-child {
+    margin-right: 0px;
+}
+
+.banner {
+    font-size: 14px;
+    line-height: 1.11;
+    letter-spacing: 0.03em;
+    color: var(--type-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.description {
+    width: 270px;
+    height: 75px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--mini-calor);
+}
+
+/*Modificator*/
+
+.modificator {
+    padding-top: 0;
+}
+
+.photos {
+    display: flex;
+    width: 100%;
+}
+
+.work-photos {
+    margin-right: 30px;
+}
+
+.work-photos:last-child {
+    margin-right: 0px;
+}
+
+.work {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--type-color);
+    margin-bottom: 50px;
+}
+
+/*Команда*/
+.members {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-style {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.style {
+    background-color: #F5F4FA;
+
+}
+
+.team {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--type-color);
+    margin-bottom: 50px;
+}
+
+/*Social-media-Links*/
+
+
+/*Card-set*/
+.card-set {
+    display: flex;
+    padding: 0;
+}
+
+
+/*Company*/
+
+.card-set .company {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 30px;
+    background-color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+.company:first-child {
+    margin-left: 0px;
+}
+
+
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--type-color);
+}
+
+.job {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--mini-calor);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/*footer*/
+
+footer {
+    background-color: var(--phone-color);
+    padding: 60px 0;
+
+}
+
+.information {
+    margin-top: 20px;
+    justify-content: left;
+    margin-left: 0;
+}
+
+.mail-and-phone {
+    margin-bottom: 9px;
+}
+
+.logo-mainer {
+    color: white;
+}
+
+.reference {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.phone-number {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.information a:hover {
+    color: var(--additional-color);
+}
