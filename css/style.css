@@ -61,7 +61,10 @@ a {
 
 /*Header*/
 .page-head {
-    border-bottom: 1px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+
 
 }
 
@@ -90,8 +93,27 @@ a {
 
 }
 
+.information .ref:last-child {
+    margin-right: 0;
+}
+
 .contacts-list {
     display: flex;
+}
+
+/*Mail-nav*/
+.phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--mini-calor);
+}
+
+.mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--mini-calor);
 }
 
 .mail-nav {
@@ -109,7 +131,6 @@ a {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--type-color);
-    padding: 32px 0;
     display: block;
 
 }
@@ -121,8 +142,6 @@ a {
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: block;
-    padding: 32px 0;
-
 }
 
 .information .linkers:hover {
@@ -130,13 +149,25 @@ a {
 
 }
 
+.mail-link:hover,
+.mail-link:focus .mail {
+    fill: var(--additional-color);
+}
+
+.mail-link:hover,
+.mail-link:focus .phone {
+    fill: var(--additional-color);
+}
+
 .mail-link {
     font-size: 14px;
-    Line-height: 1.17;
+    line-height: 1.14;
+    text-align: left;
     letter-spacing: 0.02em;
     color: var(--mini-calor);
-    padding: 32px 0;
-    font-weight: 500;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
 
 }
 
@@ -167,6 +198,7 @@ button.current {
     font-weight: 500;
     font-family: inherit;
     outline: none;
+    border: none;
     border-radius: 4px;
     background-color: #F5F4FA;
     border-color: #F5F4FA;
@@ -192,6 +224,7 @@ button.current {
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+    border: none;
 }
 
 button.current:hover {
@@ -257,15 +290,8 @@ footer {
     padding: 60px 0;
 }
 
-.logo2 {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-size: 26px;
-    line-height: 1.17;
-    vertical-align: top;
-    letter-spacing: 0.03em;
-    color: var(--additional-color);
-
+.second-address {
+    display: flex;
 }
 
 .logo-footer {
@@ -273,38 +299,40 @@ footer {
 }
 
 .contacts2 {
-    font-size: 14px;
-    line-height: 1.7;
-    text-align: left;
-    vertical-align: top;
-    letter-spacing: 0.03em;
-    font-style: normal;
-    margin-top: 20px;
+    justify-content: center;
+    margin-left: 0;
 }
 
+.page-reference-main {
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
 
 .page-reference {
-    justify-content: left;
     margin-bottom: 9px;
 
 }
 
 
 .link1 {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    flex-direction: column;
 
 }
 
 .link2 {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    flex-direction: column;
     margin-bottom: 9px;
 }
 
@@ -314,4 +342,58 @@ footer {
 
 .contacts2 a:hover {
     color: var(--additional-color)
+}
+
+/*Дополнительный Адресс*/
+.additional-address {
+    margin-left: 70px;
+}
+
+.address-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.address-apps {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.address-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.address-items:last-child {
+    margin-right: 0px;
+
+}
+
+.address-icons {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.address-items:hover,
+.address-items:focus,
+.address-icons:hover,
+.address-icons:focus {
+    background-color: var(--additional-color);
 }
