@@ -149,13 +149,11 @@ a {
 
 }
 
-.mail-link:hover,
-.mail-link:focus .mail {
+.mail-link:hover .mail {
     fill: var(--additional-color);
 }
 
-.mail-link:hover,
-.mail-link:focus .phone {
+.mail-link:hover .phone {
     fill: var(--additional-color);
 }
 
