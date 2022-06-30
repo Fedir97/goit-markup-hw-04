@@ -241,34 +241,57 @@ a {
 }
 
 
-/*marks*/
-
-.marks::before {
+/*Thumb*/
+.thumb {
     display: block;
-    content: "";
     height: 120px;
-    background-color: #F5F4FA;
-    border-radius: 5px;
     background-repeat: no-repeat;
     background-position: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+    position: relative;
 }
 
-.marks:nth-child(1)::before {
-    background-image: url("../photos/svg/antenna\ 1.svg");
+
+.thumb-link-1 {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    bottom: 25px;
 
 }
 
-.marks:nth-child(2)::before {
-    background-image: url("../photos/svg/clock\ 1.svg");
+.thumb-link-2 {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    width: 100%;
+    display: flex;
+    bottom: 25px;
 }
 
-.marks:nth-child(3)::before {
-    background-image: url("../photos/svg/diagram\ 1.svg");
+.thumb-link-3 {
+    position: absolute;
+    height: 70px;
+    width: 54px;
+    width: 100%;
+    display: flex;
+    bottom: 25px;
 }
 
-.marks:last-child::before {
-    background-image: url(../photos/svg/astronaut\ 1.svg);
+.thumb-link-4 {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    width: 100%;
+    display: flex;
+    bottom: 25px;
 }
+
+
 
 /*Feature-list*/
 
@@ -280,7 +303,6 @@ a {
 
 .feature-list .marks {
     margin-right: 30px;
-    padding-left: 26px;
 }
 
 .feature-list .marks:last-child {
@@ -314,6 +336,8 @@ a {
     padding-top: 0;
 }
 
+/*Photos*/
+
 .photos {
     display: flex;
     width: 100%;
@@ -335,6 +359,65 @@ a {
     letter-spacing: 0.03em;
     color: var(--type-color);
     margin-bottom: 50px;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img {
+    display: block;
+}
+
+.photo-description-1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    padding-top: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    color: white;
+}
+
+.photo-description-2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-top: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    color: white;
+}
+
+.photo-description-3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-top: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    color: white;
 }
 
 /*Команда*/
@@ -439,7 +522,7 @@ a {
     letter-spacing: 0.03em;
     color: var(--mini-calor);
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
 
 /*Клиенты*/
@@ -486,6 +569,8 @@ a {
 }
 
 .clients-list .clients-photo-1 {
+    width: 42px;
+    height: 46px;
     fill: #AFB1B8;
 }
 
@@ -500,6 +585,8 @@ a {
 }
 
 .clients-list .clients-photo-2 {
+    width: 40px;
+    height: 52px;
     fill: #AFB1B8;
 }
 
@@ -509,6 +596,8 @@ a {
 }
 
 .clients-list .clients-photo-3 {
+    width: 44px;
+    height: 41x;
     fill: #AFB1B8;
 }
 
@@ -518,6 +607,8 @@ a {
 }
 
 .clients-list .clients-photo-4 {
+    width: 84px;
+    height: 40px;
     fill: #AFB1B8;
 }
 
@@ -527,6 +618,8 @@ a {
 }
 
 .clients-list .clients-photo-5 {
+    width: 62px;
+    height: 45px;
     fill: #AFB1B8;
 }
 
@@ -536,6 +629,8 @@ a {
 }
 
 .clients-list .clients-photo-6 {
+    width: 94px;
+    height: 44px;
     fill: #AFB1B8;
 }
 
