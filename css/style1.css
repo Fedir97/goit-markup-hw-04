@@ -256,7 +256,6 @@ a {
 .thumb-link-1 {
     position: absolute;
     height: 70px;
-    width: 70px;
     left: 0;
     width: 100%;
     display: flex;
@@ -267,7 +266,6 @@ a {
 .thumb-link-2 {
     position: absolute;
     height: 70px;
-    width: 70px;
     width: 100%;
     display: flex;
     bottom: 25px;
@@ -276,7 +274,6 @@ a {
 .thumb-link-3 {
     position: absolute;
     height: 70px;
-    width: 54px;
     width: 100%;
     display: flex;
     bottom: 25px;
@@ -285,7 +282,6 @@ a {
 .thumb-link-4 {
     position: absolute;
     height: 70px;
-    width: 70px;
     width: 100%;
     display: flex;
     bottom: 25px;
@@ -597,7 +593,7 @@ a {
 
 .clients-list .clients-photo-3 {
     width: 44px;
-    height: 41x;
+    height: 41px;
     fill: #AFB1B8;
 }
 
