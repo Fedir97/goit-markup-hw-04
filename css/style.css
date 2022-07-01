@@ -347,6 +347,11 @@ footer {
 }
 
 /*Дополнительный Адресс*/
+.additional-footer {
+    display: flex;
+    flex-direction: column;
+}
+
 .additional-address {
     margin-left: 70px;
 }

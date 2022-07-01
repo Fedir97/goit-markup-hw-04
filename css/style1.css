@@ -243,51 +243,23 @@ a {
 
 /*Thumb*/
 .thumb {
-    display: block;
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
     background: #F5F4FA;
     border-radius: 4px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-.thumb-link-1 {
-    position: absolute;
+.thumb-link {
     height: 70px;
     left: 0;
-    width: 100%;
-    display: flex;
-    bottom: 25px;
+    width: 70px;
 
 }
-
-.thumb-link-2 {
-    position: absolute;
-    height: 70px;
-    width: 100%;
-    display: flex;
-    bottom: 25px;
-}
-
-.thumb-link-3 {
-    position: absolute;
-    height: 70px;
-    width: 100%;
-    display: flex;
-    bottom: 25px;
-}
-
-.thumb-link-4 {
-    position: absolute;
-    height: 70px;
-    width: 100%;
-    display: flex;
-    bottom: 25px;
-}
-
-
 
 /*Feature-list*/
 
@@ -641,6 +613,11 @@ footer {
     background-color: var(--phone-color);
     padding: 60px 0;
 
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
 }
 
 .main-address {
